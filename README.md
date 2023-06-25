@@ -34,10 +34,6 @@ $ cp .env.example .env
 
 5. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
 
-```bash
-$ py manage.py runserver
-```
-
 6. Run app:
 
 ```bash
