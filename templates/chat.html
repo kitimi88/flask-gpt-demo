@@ -17,39 +17,39 @@
     
         <!-- Local assets -->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <title>ChatGPT-demo{% block title %} {% endblock title %}</title>
+    <title>ChatGPT-demo{% block title %}{% endblock title %}</title>
 </head>
 
-<body data-bs-theme="auto">
+<body>
 
     <!-- partial:index.partial.html -->
-    <section class="msger" data-bs-theme="auto">
+    <section class="msger" style="max-height: 500px; overflow-y: auto;">
         <header class="msger-header">
             <div class="msger-header-title">
                 <h5>Chatbot <small><code>beta</code></small></h5>
             </div>
-<div class="d-flex">   <a href="/"class="btn btn-sm btn-primary"><i class="bi bi-arrow-clockwise"></i></a></div>
+            <div class="d-flex">
+                <a href="/"class="btn btn-sm btn-primary"><i class="bi bi-arrow-clockwise"></i></a>
+            </div>
         </header>
 
-        <main class="msger-chat" data-bs-theme="auto">
+        <main class="msger-chat">
             <div class="msg left-msg">
-                <div class="msg-img" style="background-image: url(/static/assets/openai_logo_green.png)"></div>
+                
 
                 <div class="msg-bubble" data-bs-theme="auto">
                     <div class="msg-info">
-                        <div class="msg-info-name">Chatbot</div>
+                        <div class="msg-info-name">Hello world!</div>
                         <div class="msg-info-time"></div>
                     </div>
 
                     <div class="msg-text">
-                        Hello world! Chatbot <code>beta</code>
-                        is a chatbot that aims to provide AI assist using GPT-3.5-turbo-16k model.
+                        AI assist using GPT-3.5-turbo-16k model.
                         Click <a href="https://github.com/kitimi88" class="text-decoration-none" target="_blank">here</a> to know more.
                         
                     </div>
                 </div>
             </div>
-            {% block content %}{% endblock content %}
         </main>
 
         <form class="msger-inputarea">
@@ -58,6 +58,7 @@
         </form>
 
     </section>
+    {% block content %}{% endblock content %}
     {% include 'includes/scripts.html' %}
     {% include 'includes/toggler.html' %}
     <!-- partial -->

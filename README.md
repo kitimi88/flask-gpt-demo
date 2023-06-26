@@ -1,4 +1,4 @@
-# Flask-GPT <code> <small>demo</small> </code>
+# Flask-GPT
 <!-- A collection of basic Django web applications for beginners. -->
 
 ## About
@@ -39,9 +39,14 @@ $ cp .env.example .env
 ```bash
 $ flask run
 ```
+Alternatively, use the following command if you want to connect the Flask dev server from other devices on the same network:
+```bash
+$ flask run --host=<your-local-ip> --port=5000
+```
+---
 **IMPORTANT** - By default, this project is powered by gpt-3.5-turbo-16k model. Feel free to adjust according to your preferred model in the [gpt.py](gpt.py).
 ```bash
-$ MODEL = "your-preferred-gpt-model"
+$ GPT_MODEL = "your-preferred-gpt-model"
 ```
 ---
 ## References and documentations
@@ -53,7 +58,7 @@ $ MODEL = "your-preferred-gpt-model"
 
 ---
 ## Screenshots
-Supports color themes using [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/customize/color-modes/).
+Supports color modes or themes using [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/customize/color-modes/).
 
 ![Demo_light](./screenshot/flask_light.png)
 ![Demo_dark](./screenshot/flask_dark.png)
